@@ -1,0 +1,3 @@
+export const CHANGE_MODE = "CHANGE_MODE";
+export const OBTAIN_COUNTRIES = "OBTAIN_COUNTRIES";
+export const OBTAIN_COUNTRY = "OBTAIN_COUNTRY";

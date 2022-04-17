@@ -1,0 +1,40 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.card {
+  max-width: 26.4rem;
+  width: 100%;
+  background-color: v.$white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  cursor: pointer;
+  &_bg-dark {
+    background-color: v.$darkblueDM;
+    box-shadow: unset;
+    color: v.$white;
+  }
+  &_img {
+    height: 16rem;
+    img {
+      object-fit: cover;
+      height: 16rem;
+      width: 100%;
+    }
+  }
+  &_info {
+    padding: 2.4rem;
+  }
+  &_title {
+    margin: 0 0 1.6rem 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  &_text {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+    span {
+      font-weight: 600;
+    }
+  }
+}
